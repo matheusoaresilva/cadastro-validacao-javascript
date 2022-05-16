@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+  --cor-principal: #F25260;
+  --black:#0D0D0D;
+  --white:#F2F2F2;
+  --brown:#400101;
+
+  --fonte:'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main{
+  font-family: var(--fonte);
+  
+}
+
+.section{
+  float: left;
+  padding-left: 6rem;
+  padding: 70px;
+  padding-left: 170px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--cor-principal);
+  padding-bottom: 4rem;
+}
+
+.info{
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.initial-inputs{
+  float: left;
+}
+
+.name-input, .sobrenome-input{
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1.7px solid var(--black);
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.date, .email-input, .pass-input{
+  justify-content: center;
+  display:flex;
+  padding: 0.7rem;
+  width: 25rem;
+  border-radius: 10px;
+  border: 1.7px solid var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-term{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.label-terms > a{
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+.sign-up{
+  padding: 10px;
+  width: 15rem;
+  position: relative;
+  border: 2px solid var(--cor-principal);
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.sign-up{
+  background-color: var(--cor-principal);
+  color: var(--white);
+}
+
+
+.aside-image{
+  float: right;
+}
+
+.image{
+  max-width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1300px ){
+  .aside-image{
+    display: block;
+  }
+  .image{
+    display: none;
+  }
+  .name-input, .sobrenome-input{
+    width: 25rem;
+  }
+}
+

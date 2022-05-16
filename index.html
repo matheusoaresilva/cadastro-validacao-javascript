@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <main class="main" id="main">
+    <section class="section" id="section">
+      <h1 class="title" id="title">Create Account</h1>
+      <p class="info" id="info">make your registration:</p>
+      <form action="" class="formulario" id="formulario">
+        <div class="initial-inputs">
+          <input type="text" class="name-input input" id="name" placeholder="Name" required>
+          <input type="text" class="sobrenome-input input" id="sobrenome-input" placeholder="Sobrenome" required>
+        </div>
+        <br><br>
+        <input type="date" class="date input" id="nascimento" data-tipo="dataNascimento" required>
+        <br>
+        <input type="email" class="email-input input" id="email" placeholder="Email" required> 
+        <br>
+        <input type="password" class="pass-input input" id="pass" placeholder="Password" required minlength="6" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e não deve conter simbolos"> 
+        <br>
+        <div class="checkbox-term">
+          <input type="checkbox" name="check" id="check" class="check" required>
+          <label for="termo" class="label-terms" id="label-terms">I agree to <a href="#">Terms</a> ans <a href="#">Privacy Policy</a>.</label>
+        </div>
+        <br>
+        <button class="sign-up" id="sign-up">Sign Up</button>
+      </form>
+    </section>
+    <aside class="aside-image" id="aside-image">
+      <img src="img/woman-vetor.png" alt="background image" class="image" id="image">
+    </aside>
+  </main>
+
+  <script src="js/validacao.js"></script>
+</body>
+</html>
